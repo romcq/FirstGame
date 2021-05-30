@@ -73,6 +73,7 @@ namespace FirstGame
                 }
                 player.directionX *= -1;
             }
+            scoreLabel.Text = $"Счёт: {player.score}";
 
             return isColliding;
         }

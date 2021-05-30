@@ -134,6 +134,8 @@ namespace FirstGame
         public void Actions()
         {
             timer1.Interval = 1;
+            scoreLabel.Text = $"Счёт: {player.score}";
+            livesLabel.Text = $"Жизни: {player.lives}";
             map.map[player.platformY / 20, player.platformX / 20] = 9;
             map.map[player.platformY / 20, player.platformX / 20 + 1] = 99;
             map.map[player.platformY / 20, player.platformX / 20 + 2] = 999;
