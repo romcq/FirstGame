@@ -39,7 +39,7 @@ namespace FirstGame
                 if (addScore)
                 {
                     player.score += 50;
-                    if (player.score % 200 == 0 && player.score > 0)
+                    if (player.score % 300 == 0 && player.score > 0)
                     {
                         map.AddLine();
                     }
@@ -66,13 +66,13 @@ namespace FirstGame
                 if (addScore)
                 {
                     player.score += 50;
-                    if (player.score % 200 == 0 && player.score > 0)
+                    if (player.score % 300 == 0 && player.score > 0)
                     {
                         map.AddLine();
                     }
                 }
                 player.directionX *= -1;
-            }
+            }  
             scoreLabel.Text = $"Счёт: {player.score}";
 
             return isColliding;

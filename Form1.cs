@@ -33,7 +33,7 @@ namespace FirstGame
 
             timer1.Tick += new EventHandler(Update);
             timer2.Tick += new EventHandler(AnimationUpdate);
-            timer2.Interval = 100;
+            timer2.Interval = 110 ;
 
             KeyDown += new KeyEventHandler(InputCheck);
 
@@ -166,7 +166,7 @@ namespace FirstGame
             timer1.Interval = 1;
 
             player.score = 0;
-            player.lives = 6;
+            player.lives = 10;
             scoreLabel.Text = $"Счёт: {player.score}";
             livesLabel.Text = $"Жизни: {player.lives}";
             for (int i = 0; i < MapChanges.mapHeight; i++)
