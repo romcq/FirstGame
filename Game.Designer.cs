@@ -1,7 +1,7 @@
 ﻿
 namespace FirstGame
 {
-    partial class Form1
+    partial class Game
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -34,12 +34,13 @@ namespace FirstGame
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // Form1
+            // Game
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.BackgroundImage = global::FirstGame.Properties.Resources.background;
+            this.ClientSize = new System.Drawing.Size(519, 552);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
+            this.Name = "Game";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Painting);
             this.ResumeLayout(false);

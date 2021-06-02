@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace FirstGame
 {
-    public partial class Form1 : Form
+    public partial class Game : Form
     {
         MapChanges map;
         Player player;
@@ -14,7 +14,7 @@ namespace FirstGame
         public Label scoreLabel;
         public Label livesLabel;
 
-        public Form1()
+        public Game()
         {
             InitializeComponent();
 
@@ -60,7 +60,7 @@ namespace FirstGame
             switch (e.KeyCode)
             {
                 case Keys.D:
-                    if (player.platformX / 20 + 2 < MapChanges.mapWidth - 1)
+                    if (player.platformX / 20 + 3 < MapChanges.mapWidth )
                     {
                         player.platformX += 9;
                     }
@@ -71,8 +71,19 @@ namespace FirstGame
                     {
                         player.platformX -= 9;
                     }
-
-                    break;
+                    break;         
+                case Keys.W:
+                    if (player.platformY / 20 > MapChanges.mapHeight - 4) 
+                    {
+                        player.platformY -= 9;
+                    }
+                    break; 
+                case Keys.S:
+                    if (player.platformY / 20 < MapChanges.mapHeight-1) 
+                    {
+                        player.platformY += 9;
+                    }
+                    break; 
             }
             map.map[player.platformY / 20, player.platformX / 20] = 9;
             map.map[player.platformY / 20, player.platformX / 20 + 1] = 99;
@@ -99,12 +110,12 @@ namespace FirstGame
             map.map[player.ballY / 20, player.ballX / 20] = 0;
             if (!physics.IsCollide(player, map, scoreLabel))
             {
-                player.ballX += player.directionX * 4;
+                player.ballX += player.directionX * 6;
             }
 
             if (!physics.IsCollide(player, map, scoreLabel))
             {
-                player.ballY += player.directionY * 4;
+                player.ballY += player.directionY * 6;
             }
 
             map.map[player.ballY / 20, player.ballX / 20] = 8;
@@ -209,6 +220,11 @@ namespace FirstGame
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ExGameBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
