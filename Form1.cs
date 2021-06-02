@@ -62,14 +62,14 @@ namespace FirstGame
                 case Keys.D:
                     if (player.platformX / 20 + 2 < MapChanges.mapWidth - 1)
                     {
-                        player.platformX += 7;
+                        player.platformX += 9;
                     }
 
                     break;
                 case Keys.A:
                     if (player.platformX > 0)
                     {
-                        player.platformX -= 7;
+                        player.platformX -= 9;
                     }
 
                     break;
