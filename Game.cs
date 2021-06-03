@@ -115,12 +115,12 @@ namespace FirstGame
             map.map[player.ballY / 20, player.ballX / 20] = 0;
             if (!physics.IsCollide(player, map, scoreLabel))
             {
-                player.ballX += player.directionX * 6;
+                player.ballX += player.directionX * 7;
             }
 
             if (!physics.IsCollide(player, map, scoreLabel))
             {
-                player.ballY += player.directionY * 6;
+                player.ballY += player.directionY * 7;
             }
 
             map.map[player.ballY / 20, player.ballX / 20] = 8;
