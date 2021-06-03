@@ -84,6 +84,11 @@ namespace FirstGame
                         player.platformY += 9;
                     }
                     break; 
+                case Keys.M:
+                    {
+                Application.Exit();
+                    }
+                    break; 
             }
             map.map[player.platformY / 20, player.platformX / 20] = 9;
             map.map[player.platformY / 20, player.platformX / 20 + 1] = 99;

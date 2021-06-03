@@ -36,10 +36,12 @@ namespace FirstGame
             // 
             // StartGameBtn
             // 
-            this.StartGameBtn.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.StartGameBtn.Location = new System.Drawing.Point(222, 88);
+            this.StartGameBtn.BackgroundImage = global::FirstGame.Properties.Resources.darkbackground;
+            this.StartGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StartGameBtn.Font = new System.Drawing.Font("Impact", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StartGameBtn.Location = new System.Drawing.Point(90, 63);
             this.StartGameBtn.Name = "StartGameBtn";
-            this.StartGameBtn.Size = new System.Drawing.Size(324, 90);
+            this.StartGameBtn.Size = new System.Drawing.Size(366, 135);
             this.StartGameBtn.TabIndex = 0;
             this.StartGameBtn.Text = "Начать игру";
             this.StartGameBtn.UseVisualStyleBackColor = true;
@@ -47,10 +49,12 @@ namespace FirstGame
             // 
             // ExitGameBtn
             // 
-            this.ExitGameBtn.Font = new System.Drawing.Font("Impact", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExitGameBtn.Location = new System.Drawing.Point(222, 206);
+            this.ExitGameBtn.BackgroundImage = global::FirstGame.Properties.Resources.darkbackground;
+            this.ExitGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitGameBtn.Font = new System.Drawing.Font("Impact", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitGameBtn.Location = new System.Drawing.Point(90, 243);
             this.ExitGameBtn.Name = "ExitGameBtn";
-            this.ExitGameBtn.Size = new System.Drawing.Size(324, 90);
+            this.ExitGameBtn.Size = new System.Drawing.Size(366, 135);
             this.ExitGameBtn.TabIndex = 1;
             this.ExitGameBtn.Text = "Выход из игры";
             this.ExitGameBtn.UseVisualStyleBackColor = true;
@@ -59,13 +63,14 @@ namespace FirstGame
             // InstrLbl
             // 
             this.InstrLbl.AutoSize = true;
-            this.InstrLbl.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InstrLbl.Location = new System.Drawing.Point(552, 276);
+            this.InstrLbl.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.InstrLbl.Image = global::FirstGame.Properties.Resources.darkbackground;
+            this.InstrLbl.Location = new System.Drawing.Point(495, 201);
             this.InstrLbl.Name = "InstrLbl";
-            this.InstrLbl.Size = new System.Drawing.Size(236, 165);
+            this.InstrLbl.Size = new System.Drawing.Size(293, 240);
             this.InstrLbl.TabIndex = 2;
             this.InstrLbl.Text = "Управление: \r\nW - двигаться вверх\r\nS - двигаться вниз\r\nА - двигаться влево\r\nD - д" +
-    "вигаться вправо\r\n";
+    "вигаться вправо\r\nM - выход из игры";
             // 
             // Menu
             // 
